@@ -1,1 +1,60 @@
-<p>about-me works!</p>
+<mat-card class="about-me">
+  <mat-card-title-group>
+    <div mat-card-avatar class="about-header-profile"></div>
+    <mat-card-title>
+      Quick Stats
+    </mat-card-title>
+
+    <mat-card-subtitle>
+      Get to know Vivek a little better!
+    </mat-card-subtitle>
+
+  </mat-card-title-group>
+
+  <mat-card-content>
+    <p>
+      There are several ARIA roles that communicate that a portion of the UI represents some semantically meaningful whole.
+      Depending on what the content of the card means to your application, role="group", role="region", or one of the
+      landmark roles should typically be applied to the element.
+    </p>
+    <p>
+      A role is not necessary when the card is used as a purely decorative container that does not convey a meaningful
+      grouping of related content for a single subject. In these cases, the content of the card should follow standard
+      practices for document content.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button class="about-card-btn"
+      (click)="openGithubDialog()">
+      GitHub
+    </button>
+    <button mat-button class="about-card-btn"
+      (click)="openLinkedInDialog()">
+      LinkedIn
+    </button>
+  </mat-card-actions>
+</mat-card>
+<!-- Pi -->
+<mat-card class="picture-scroll"
+  >
+  <mat-card-title-group>
+    <mat-card-title>
+      Adventures & Favorite Things
+    </mat-card-title>
+    <mat-card-subtitle>
+      Feel free to scroll through!
+    </mat-card-subtitle>
+    <div>
+      <mat-card-actions>
+        <button mat-button class="about-card-btn">Previous</button>
+        <button mat-button class="about-card-btn">Next</button>
+      </mat-card-actions>
+    </div>
+  </mat-card-title-group>
+  <mat-card-content class="picture">
+    <div class="picture-container">
+      <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" />
+    </div>
+  </mat-card-content>
+  
+</mat-card>
