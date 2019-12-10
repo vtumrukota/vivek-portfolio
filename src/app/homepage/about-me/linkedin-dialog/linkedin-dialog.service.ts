@@ -6,6 +6,6 @@ export class LinkedInService {
   constructor(private http: HttpClient) {}
 
   getVivekProfile() {
-    return this.http.get('https://api.linkedin.com/v1/people/url=vtumrukota');
+    return this.http.get('https://api.linkedin.com/v1/people/url=https://www.linkedin.com/in/vtumrukota/');
   }
 }

@@ -1,5 +1,14 @@
 <mat-toolbar class="portfolio-header">
-  <mat-toolbar-row>
-    <span>Vivek's Portfolio</span>
-  </mat-toolbar-row>
+  <span>Vivek Tumrukota - Startup Engineering & Sales Professional</span>
+  <span class="fill-toolbar"></span>
+  <!-- Social Profile Icon + Links -->
+  <span class="social-links">>
+    <a class="social-icon"
+      [ngClass]="icon.class"
+      *ngFor="let icon of socialIcons" 
+      href="{{icon.href}}"
+      target="_blank">
+      <img src="{{icon.imgUrl}}" />
+    </a>
+  </span>
 </mat-toolbar>
